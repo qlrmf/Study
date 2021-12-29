@@ -1,0 +1,1 @@
+document.writeln('외부 js파일 생성');

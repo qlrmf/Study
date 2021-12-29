@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>String객체</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/javascript">
+                var str1 = "뜰에 뜰에 뜰에는 닭이 있다.";
+                document.writeln(str1.indexOf('뜰'));
+                document.writeln(str1.lastIndexOf('뜰'));
+                document.writeln(str1.indexOf('뜰',3));
+                document.writeln(str1.lastIndexOf('에',5));
+                document.writeln(str1.indexOf('가든'));
+
+                var str2 = 'TEST프로젝트';
+                document.writeln(str2.charAt(4));
+                document.writeln(str2.slice(5,8));
+                document.writeln(str2.substring(5,8));
+                document.writeln(str2.substr(5,3));
+                document.writeln(str2.split('s'));
+                document.writeln(str1.split('뜰',3));
+
+                document.writeln('위로'.anchor('top'));
+                document.writeln(str2.link('https://blog.itthis.me/'));
+                document.writeln('10'.sub());
+                document.writeln('10'.sup());
+
+                document.writeln(str2.concat('무한상사'));
+                document.writeln(str2.length);
+            </script>
+        </pre>
+    </body>
+</html>

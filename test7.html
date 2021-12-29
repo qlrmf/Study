@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content" content="text/html; charset=UTF-8">
+        <title>Array객체</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/javascript">
+                var arr1 = ['gildong', 'sunsin', 'youngsu', 'mina', 'taesu'];
+                var arr2 = ['sumi', 'woosung', 'wonbin', 'suyoung'];
+
+                document.writeln(arr1.concat(arr2)); //배열병합
+                document.writeln(arr1.join('/')); // 배열의 요소를 /로 구분문자 삽입
+                document.writeln(arr1.slice(1)); 
+                document.writeln(arr1.slice(1,2)); // start ~ end-1 요소를 자름
+                document.writeln(arr1.splice(1,3, 'suyeon', 'eunngung'));
+                document.writeln(arr1);
+                
+                document.writeln('---------------');
+                document.writeln(arr1.pop()); // arr1에서 마지막에 들어간 하나를 pop한다.(내보낸다)
+                document.writeln(arr1);
+                document.writeln(arr1.push('new'));// arr1에 'new'를 push한다.(넣는다)
+                document.writeln(arr1);
+                document.writeln(arr1.shift());
+                document.writeln(arr1);
+                document.writeln(arr1.unshift('minsu', 'sunho'));
+                document.writeln(arr1);
+
+                document.writeln('---------------');
+                document.writeln(arr1.length);
+                document.writeln(arr1.toString());
+            </script>
+        </pre>
+    </body>
+</html>
