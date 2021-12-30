@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Object</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/javascript">
+                /*
+                constructor : 객체생성자
+                toString()  : 객체 기본 문자열 표현 확인
+                valueOf()   : 객체 기본형 표현
+                hasOwnProperty(prop) : prop를 갖고있는가
+                propertyIsEnumerable(prop) : for...in 명령에 의해 프로퍼티/메서드를 열거할 수 있는가.
+                isPropertyIf(ob) : 호출한 객체의 포로토타입 여부 확인
+                */
+                var ob = new Object();
+                document.writeln(ob.toString());
+                document.writeln(ob.valueOf());
+
+                var dat = new Date();
+                document.writeln(dat.toString());
+                document.writeln(dat.valueOf());
+
+                var arr = ['prototype.js', 'jQuery', 'kakaoOven'];
+                document.writeln(arr.toString());
+                document.writeln(arr.valueOf());
+
+                var num = 10;
+                document.writeln(num.toString());
+                document.writeln(num.valueOf());
+
+                var reg = /[0-9]{3}-[0-9]{4}/g;
+                document.writeln(reg.toString());
+                document.writeln(reg.valueOf());
+
+                /*  
+                typeOf : 자료형을 판단한다.(객체형은 모두 object타입으로 판단한다.)
+                constructor : 객체 타입 판별
+                */
+                var date = [];
+                if(typeof date == 'object' && date.constructor == Array){
+                    document.writeln('변수date는 Array객체의 인스턴스다.');
+                } else {
+                    document.writeln('뭐지');
+                }
+            </script>
+        </pre>
+    </body>
+</html>
