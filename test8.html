@@ -28,6 +28,30 @@
                 document.writeln(dat.getUTCMinutes());  //분(0~59)
                 document.writeln(dat.getUTCSeconds());  //초(0~59)
                 document.writeln(dat.getUTCMilliseconds()); // 밀리초(0~999)
+                
+                document.writeln();
+                var dat2 = new Date();
+                //설정
+                dat2.setFullYear(2021);
+                dat2.setMonth(11);
+                dat2.setDate(30);
+                dat2.setHours(11);
+                dat2.setMinutes(35);
+                dat2.setSeconds(15);
+                dat2.setMilliseconds(513);
+
+                //문자열로 변환
+                document.writeln(dat2.toLocaleString());//로컬시
+                document.writeln(dat2.toGMTString());   //그리니치 표준시
+                document.writeln(dat2.toUTCString());   //세계협정시
+                document.writeln(dat2.toDateString());  //일바부분
+                document.writeln(dat2.toTimeString());  //시각부분
+                document.writeln(dat2.toLocaleDateString());    //지역에 따른 날짜 부분
+                document.writeln(dat2.toLocaleTimeString());    //지역에 따른 시간 부분
+                
+                document.writeln();
+                document.writeln(Date.parse('2021/11/30')); // 날짜 문자열을 해석해 1970/01/01 00:00:00 부터의 밀리초를 얻는다.
+                document.writeln(Date.UTC(2020,11,30));     // UTC기준으로 1970/01/01 00:00:00 부터의 밀리초를 얻는다.
             </script>
         </pre>
     </body>
