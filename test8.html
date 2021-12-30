@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>date객체</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/javascript">
+                var dat = new Date(2021,11,30,10,35,13,999);    
+                document.writeln(dat); 
+                document.writeln(dat.getFullYear());    // 년도 네자리
+                document.writeln(dat.getMonth());   // 월(0~11)
+                document.writeln(dat.getDate());    // 일(1~31)
+                document.writeln(dat.getDay());     // 요일(0:일, 6:토)
+                document.writeln(dat.getHours());   // 시(0~23)
+                document.writeln(dat.getMinutes()); // 분(0~59)
+                document.writeln(dat.getSeconds()); // 초(0~59)
+                document.writeln(dat.getMilliseconds());    //밀리초(0~999)
+                document.writeln(dat.getTime());    // 1970/01/01 00:00:00 부터 지나온 시간(밀리초)
+                document.writeln(dat.getTimezoneOffset());
+                document.writeln();
+                document.writeln(dat.getUTCFullYear()); //년도 네자리
+                document.writeln(dat.getUTCMonth());    //월(0~11)
+                document.writeln(dat.getUTCDate());     //일(1~31)
+                document.writeln(dat.getUTCDay());      //요일(0:일~6:토)
+                document.writeln(dat.getUTCHours());    //시(0~23)
+                document.writeln(dat.getUTCMinutes());  //분(0~59)
+                document.writeln(dat.getUTCSeconds());  //초(0~59)
+                document.writeln(dat.getUTCMilliseconds()); // 밀리초(0~999)
+            </script>
+        </pre>
+    </body>
+</html>
