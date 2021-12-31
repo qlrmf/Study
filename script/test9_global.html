@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta http-equiv="Content" content="text/html; charset=UTF-8"/>
+        <title>Global 객체</title>
+    </head>
+    <body>
+        <!-- 
+            글로벌변수나 글로벌함수를 관리하기 위한 자바스크립트에서 자동으로 생성하는 객체
+        -->
+        <pre>
+            <script type="text/javascript">
+                /*
+                    Boolean(n) : 논리형으로 변환
+                    Number(n) : 수치형으로 변환
+                    String(n) : 문자열형으로 변환
+                    parseFloat(str) : 소수점이 있는 형태의 문자열을 수치형으로 변환
+                    parseInt(str) : 정수형태의 문자열을 수치형태로 변환
+                */
+                var n = '123xxx';
+                document.writeln("var n = '123xxx'");
+                document.writeln(Number(n));
+                document.writeln(parseFloat(n));
+                document.writeln(parseInt(n));
+                
+                var d = new Date();
+                document.writeln("var d = new Date()");
+                document.writeln(Number(d));
+                document.writeln(parseFloat(d));
+                document.writeln(parseInt(d));
+                
+                var h = '0777';
+                document.writeln("var h = '0777'");
+                document.writeln(Number(h));
+                document.writeln(parseFloat(h));
+                document.writeln(parseInt(h));
+                
+                var e = '1.01e+2';
+                document.writeln("var e = '1.01e+2'");
+                document.writeln(Number(e));
+                document.writeln(parseFloat(e));
+                document.writeln(parseInt(e));
+                
+                var str = '!"#$%&()+-*/@~_|;:,.';
+                document.writeln('!"#$%&()+-*/@~_|;:,.');
+                document.writeln(encodeURI(str));           // URI인코딩
+                document.writeln(encodeURIComponent(str));  //URL인코딩
+
+                var str2 = 'window.alert("eval함수")';
+                eval(str2);
+            </script>
+        </pre>
+    </body>
+</html>
